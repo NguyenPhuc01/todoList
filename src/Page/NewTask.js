@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Description from '../Component/Description';
 import Dropdown from '../Component/Dropdown';
 import Input from '../Component/Input';
@@ -65,7 +65,7 @@ const NewTask = () => {
             ]
         )
     }
-
+    console.log({ check });
     const handleRemove = (id, i) => {
         // if (check === i) {
         const gettodo = JSON.parse(localStorage.getItem('todo'))
@@ -77,8 +77,17 @@ const NewTask = () => {
         // }
     }
     const handleDeteteCheck = () => {
-     
+        const gettodo = JSON.parse(localStorage.getItem('todo'))
+        const jsonTodo = JSON.stringify(gettodo.filter((e) => !check.includes(e.id)))
+        localStorage.setItem('todo', jsonTodo)
+        const todo = JSON.parse(localStorage.getItem('todo'))
+        console.log("🚀 ~ file: NewTask.js ~ line 84 ~ handleDeteteCheck ~ todo", todo)
+        setTodos(todo)
+
     }
+
+    console.log({ showhide });
+
     const handleShowDetail = (e, i) => {
         const sh = false
         console.log(!sh);
