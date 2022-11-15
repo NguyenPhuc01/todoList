@@ -15,10 +15,6 @@
 .container {
   display: flex;
   justify-content: space-around;
-  /*border: 1px solid black;
-  margin: 3px; */
-  left: 211px;
-  top: 81px;
   width: 1209px;
   height: 958px;
   background: #ffffff;
@@ -426,9 +422,4 @@
   border-radius: 10px;
   margin: 0px 20px;
   cursor: pointer;
-}
-@media only screen and( max-width:739px) {
-  .container {
-    width: 740px;
-  }
 }

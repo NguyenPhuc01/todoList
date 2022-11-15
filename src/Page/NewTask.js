@@ -65,13 +65,6 @@ const NewTask = () => {
             ]
         )
     }
-    console.log({ ...check });
-    const eid = check.map((e) => {
-        return e
-
-
-    })
-    console.log({ eid });
 
     const handleRemove = (id, i) => {
         // if (check === i) {
@@ -84,26 +77,7 @@ const NewTask = () => {
         // }
     }
     const handleDeteteCheck = () => {
-        const gettodo = JSON.parse(localStorage.getItem('todo'))
-        // gettodo.splice(i, 1)
-        var tesst = gettodo.filter((e, i) => {
-            console.log({ e });
-        })
-        console.log(tesst);
-
-        // const jsonTodo = JSON.stringify(gettodo)
-        // localStorage.setItem('todo', jsonTodo)
-        // setTodos(gettodo)
-
-        // var i = 0;
-        // while (i < todos.length) {
-        //     if (todos[i] === check) {
-        //         todos.splice(i, 1);
-        //     } else {
-        //         ++i;
-        //     }
-        // }
-        // return todos;
+     
     }
     const handleShowDetail = (e, i) => {
         const sh = false
