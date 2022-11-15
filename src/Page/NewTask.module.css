@@ -1,0 +1,434 @@
+* {
+  font-family: "Source Sans Pro";
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  /*border: 1px solid black;
+  margin: 3px; */
+  left: 211px;
+  top: 81px;
+  width: 1209px;
+  height: 958px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+.text {
+  left: 421px;
+  top: 102px;
+  width: 90px;
+  height: 80px;
+  color: #000000;
+
+  font-size: 18px;
+  margin: 18px 0px 0px 0px;
+  /* text-align: center; */
+  line-height: 1px;
+  padding: 5px;
+}
+.vRuler {
+  display: inline-flex;
+  left: 716px;
+  top: 80px;
+  width: 25px;
+  height: 958px;
+}
+.hr {
+  margin: 0px 0px 0px 12.5px;
+}
+.leftContainer {
+  width: 40%;
+}
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  position: relative;
+}
+.addTaskInput,
+.searchTaskInput {
+  display: flex;
+  justify-content: center;
+}
+.addTaskInput input {
+  left: 254px;
+  top: 179px;
+  width: 423px;
+  height: 32px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.addTaskInput input:focus {
+  outline: none;
+}
+.add {
+  cursor: pointer;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.textareaDescription {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.textareaDescription textarea {
+  width: 421px;
+  height: 125px;
+  color: #000000;
+
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+  line-height: 1px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+.textDescription {
+  padding-left: 1.4vw;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0px;
+}
+.dateTime {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 8px;
+}
+.dueDate input {
+  width: 203px;
+  height: 31px;
+  color: #000000;
+
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+
+.dueDate {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.textDueDate {
+  width: 130px;
+  height: 25px;
+  color: #000000;
+
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+}
+.piority {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.selectPiority {
+  width: 192px;
+  height: 33px;
+  color: #000000;
+
+  font-size: 12px;
+
+  text-decoration: none;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 74px;
+}
+.add {
+  width: 423px;
+  height: 32px;
+  color: #ffffff;
+  font-family: Arimo;
+  font-size: 15px;
+
+  text-align: center;
+  background: #5cb85c;
+  border: none;
+  border-radius: 10px;
+}
+
+/* right display */
+.searchTaskInput input {
+  width: 554px;
+  height: 33px;
+  color: #000000;
+  font-size: 12px;
+  padding-left: 10px;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+/* .detailAll {
+  display: flex;
+  justify-content: center;
+} */
+.detail {
+  margin-top: 15px;
+  width: 550px;
+  height: 61px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.work {
+  color: #333333;
+  align-self: center;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1px;
+  padding: 5px;
+}
+.detail input {
+  width: 50px;
+  height: 20px;
+  color: #000000;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+.check {
+  display: flex;
+  align-items: center;
+}
+.btnDetail {
+  width: 93px;
+  height: 27px;
+  color: #ffffff;
+  font-family: Arimo;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  background: #00bcd4;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btnRemote {
+  width: 79px;
+  height: 28px;
+  color: #ffffff;
+  font-family: Arimo;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  background: #d9534f;
+  border: none;
+  border-radius: 10px;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.smallContainerRight {
+  width: 550px;
+  height: 388px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.doHomeWork input {
+  margin-top: 15px;
+  width: 503px;
+  height: 31px;
+  color: #000000;
+  font-size: 12px;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.descriptionTextSmall {
+  width: 169px;
+  height: 25px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 15px 0px 0px 0px;
+}
+.textarea textarea {
+  width: 505px;
+  height: 122px;
+  color: #000000;
+  font-size: 12px;
+
+  text-align: left;
+  padding: 5px;
+  line-height: 1px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+.dateTimeTodo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dueDateTodo {
+  display: flex;
+  flex-direction: column;
+}
+.dueDateTodo input {
+  width: 242px;
+  height: 30px;
+  color: #000000;
+  font-size: 12px;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+.textPiorityTodo {
+  width: 169px;
+  height: 25px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+  margin: 10px 0px 0px 0px;
+}
+.textDueDateTodo {
+  width: 169px;
+  height: 25px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 10px 0px 0px 0px;
+}
+.selectPiorityTodo {
+  width: 230px;
+  height: 32px;
+  color: #000000;
+  font-size: 12px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+.btnUpdate {
+  width: 507px;
+  height: 31px;
+  color: #ffffff;
+  font-family: Arimo;
+  font-size: 15px;
+  margin-top: 25px;
+  text-align: center;
+  background: #4caf50;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.done {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 691px;
+  height: 82px;
+  background: #e0e0e0;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  width: 100%;
+}
+.bulkAction {
+  display: flex;
+  width: 200px;
+  height: 80px;
+  color: #333333;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1px;
+  padding: 5px;
+  align-items: center;
+  margin-left: 20px;
+}
+.btnDonelBulk {
+  width: 110px;
+  height: 36px;
+  color: #ffffff;
+  font-family: Arimo;
+  font-size: 12px;
+  text-align: center;
+  background: #2196f3;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btnRemoteBulk {
+  width: 110px;
+  height: 36px;
+  color: #ffffff;
+  font-family: Arimo;
+  font-size: 12px;
+  text-align: center;
+  background: #d9534f;
+  border: none;
+  border-radius: 10px;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+@media only screen and( max-width:739px) {
+  .container {
+    width: 740px;
+  }
+}
