@@ -1,24 +1,16 @@
 import React from 'react';
-
-const Description = (props) => {
-    return (
-        <div>
-            <div>
-                <p className={props.textDescription}>
-                    Description
-                </p>
-            </div>
-            <div className={props.textareaDescription}>
-                <textarea placeholder={props.placeholder}
-                    defaultValue={props.defaultValue}
-
-                    onChange={props.onChange}
-                >
-
-                </textarea>
-            </div>
-        </div>
-    );
+import styles from '../Page/NewTask.module.css';
+const Description = ({placeholder, value, onChange}) => {
+  return (
+    <div>
+      <div>
+        <p className={styles.descriptionTextSmall}>Description</p>
+      </div>
+      <div className={styles.textarea}>
+        <textarea placeholder={placeholder} value={value} onChange={onChange}></textarea>
+      </div>
+    </div>
+  );
 };
 
 export default Description;

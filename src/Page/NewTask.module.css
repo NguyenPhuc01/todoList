@@ -1,5 +1,5 @@
 * {
-  font-family: "Source Sans Pro";
+  font-family: 'Source Sans Pro';
 }
 
 .header {
@@ -398,7 +398,7 @@
   align-items: center;
   margin-left: 20px;
 }
-.btnDonelBulk {
+.btnDoneBulk {
   width: 110px;
   height: 36px;
   color: #ffffff;
@@ -410,7 +410,7 @@
   border-radius: 10px;
   cursor: pointer;
 }
-.btnRemoteBulk {
+.btnRemoveBulk {
   width: 110px;
   height: 36px;
   color: #ffffff;
